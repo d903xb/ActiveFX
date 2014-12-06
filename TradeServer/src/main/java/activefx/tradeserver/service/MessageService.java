@@ -5,5 +5,5 @@ package activefx.tradeserver.service;
  */
 public interface MessageService {
 
-    public void printMessage();
+    public String getMessage();
 }

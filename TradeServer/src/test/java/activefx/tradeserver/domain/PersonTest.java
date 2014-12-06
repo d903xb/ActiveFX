@@ -1,4 +1,4 @@
-package activefx.tradserver.domain;
+package activefx.tradeserver.domain;
 
 import org.junit.Assert;
 import org.junit.Test;

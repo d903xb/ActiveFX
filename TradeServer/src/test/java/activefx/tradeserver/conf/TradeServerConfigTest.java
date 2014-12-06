@@ -1,4 +1,4 @@
-package activefx.conf;
+package activefx.tradeserver.conf;
 
 import activefx.tradeserver.service.MessageService;
 import org.springframework.context.annotation.Bean;
@@ -7,16 +7,12 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan("activefx.tradeserver")
-public class TradeServerConfig {
+public class TradeServerConfigTest {
 
     @Bean
     MessageService mockMessageService() {
-        return new MessageService () {
-            @Override
-            public void printMessage() {
-                System.out.print("Hello World");
-            }
-        };
+        MessageService mock = () -> "Test Hello World";
+        return mock;
     }
 
 }

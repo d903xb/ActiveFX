@@ -1,6 +1,6 @@
-package activefx.runner;
+package activefx.tradeserver.runner;
 
-import activefx.conf.TradeServerConfig;
+import activefx.tradeserver.conf.TradeServerConfig;
 import activefx.tradeserver.service.MessagePrinter;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -12,7 +12,6 @@ public class TradeServerRunner {
             ApplicationContext context =
                     new AnnotationConfigApplicationContext(TradeServerConfig.class);
             MessagePrinter printer = context.getBean(MessagePrinter.class);
-            printer.printMessage();
-
+            System.out.println(printer.getMessage());
         }
 }
