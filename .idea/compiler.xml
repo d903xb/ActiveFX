@@ -27,5 +27,8 @@
         <module name="TradeServer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="TradeServer" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
