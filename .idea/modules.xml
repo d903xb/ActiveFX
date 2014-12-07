@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ActiveFX.iml" filepath="$PROJECT_DIR$/ActiveFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DiscardServer/DiscardServer.iml" filepath="$PROJECT_DIR$/DiscardServer/DiscardServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoadBalancer/LoadBalancer.iml" filepath="$PROJECT_DIR$/LoadBalancer/LoadBalancer.iml" />
       <module fileurl="file://$PROJECT_DIR$/TradeServer/TradeServer.iml" filepath="$PROJECT_DIR$/TradeServer/TradeServer.iml" />
     </modules>
