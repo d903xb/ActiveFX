@@ -11,7 +11,7 @@
     <modules>
         <module>TradeServer</module>
         <module>LoadBalancer</module>
-        <module>DiscardServer</module>
+        <module>EchoServer</module>
     </modules>
 
     <dependencies>

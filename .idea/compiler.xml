@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="ActiveFx-TradeServer" />
         <module name="DiscardServer" />
+        <module name="EchoServer" />
         <module name="LoadBalancer" />
         <module name="TradeServer" />
       </profile>
