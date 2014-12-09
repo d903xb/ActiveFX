@@ -15,7 +15,7 @@ import java.net.InetSocketAddress;
 /**
  * Discards any incoming data.
  */
-public class EchoServer {
+public class EchoServer { 
 
     private int port;
 
