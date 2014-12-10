@@ -4,6 +4,7 @@ import io.netty.buffer.ByteBuf;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.util.ReferenceCountUtil;
 
 /**
@@ -13,15 +14,9 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter { // (1)
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) { // (2)
-        ByteBuf in = (ByteBuf) msg;
-        try {
-            while (in.isReadable()) { // (1)
-                System.out.print((char) in.readByte());
-                System.out.flush();
-            }
-        } finally {
-            ReferenceCountUtil.release(msg); // (2)
-        }
+      //  ByteBuf in = (ByteBuf) msg;
+        FullHttpRequest httpReq = (FullHttpRequest)msg;
+        System.out.println(httpReq.toString());
     }
 
     @Override
