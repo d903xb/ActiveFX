@@ -3,8 +3,7 @@ package activefx.tradeserver.jms;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jms.listener.DefaultMessageListenerContainer;
 
-/**
- * Created by steve on 15/12/2014.
+ /* Created by steve on 15/12/2014.
  */
 public class MQListener {
 
@@ -12,14 +11,14 @@ public class MQListener {
     public DefaultMessageListenerContainer jmsListenerContainer() {
         DefaultMessageListenerContainer dmlc = new DefaultMessageListenerContainer();
 
-        dmlc.setConnectionFactory(new ());
-        dmlc.setDestination(new ActiveMQQueue("orders.queue"));
+       /*  dmlc.setConnectionFactory(new ());
+       dmlc.setDestination(new MQConnection("orders.queue"));
 
         // To schedule our concurrent listening tasks
         dmlc.setTaskExecutor(taskExecutor());
 
         // To perform actual message processing
-        dmlc.setMessageListener(messageListener());
+        dmlc.setMessageListener(messageListener());*/
 
         dmlc.setConcurrentConsumers(10);
 

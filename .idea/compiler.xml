@@ -30,6 +30,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ActiveFX" target="1.8" />
+      <module name="EchoServer" target="1.8" />
+      <module name="LoadBalancer" target="1.8" />
       <module name="TradeServer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
